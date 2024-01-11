@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Page</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: url(./Forbes.com_.webp);
+            background-size: cover;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .main {
+            height: 90%;
+            width: 90%;
+            text-align: center;
+        }
+
+        .section {
+            height: 30%;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1%;
+        }
+
+        .bar1 {
+            width: 15%;
+            height: 20%;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+
+        .circle1 {
+            height: 40%;
+            width: 6%;
+            border-radius: 50%;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+
+        .bar2 {
+            width: 15%;
+            height: 20%;
+        }
+
+        .bar3 {
+            width: 15%;
+            height: 20%;
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        .green {
+            background: repeating-linear-gradient(
+                45deg,
+                #00ff22,
+                #00ff22 10px,
+                #3eab3a 10px,
+                #43a43a 20px
+
+            );
+
+            box-shadow: 0 0 10px 0 #0d6308 inset;
+
+        }
+
+        .blue {
+            background: repeating-linear-gradient(
+                45deg,
+                #002fff,
+                #002fff 10px,
+                #0f46d3 10px,
+                #034294 20px
+
+            );
+
+            box-shadow: 0 0 10px 0 #160863 inset;
+
+        }
+
+        .grey {
+            background: repeating-linear-gradient(
+                45deg,
+                #445177,
+                #526294, 10px,
+                #2c2c52 10px,
+                #202537 20px
+
+            );
+
+            box-shadow: 0 0 10px 0 #aca6cf inset;
+
+        }
+
+        .green2 {
+                background: linear-gradient(
+                #3eab3a 0%,   
+                #00ff22 100%
+                );
+
+
+                box-shadow: 0 0 10px 0 #0d6308 inset;
+            }
+
+            .blue2 {
+                background: linear-gradient(
+                #002fff 5%,   
+                #0b4baa 95%
+                );
+
+                box-shadow: 0 0 10px 0 #100260 inset;
+            }
+
+            .grey2 {
+                background: linear-gradient(
+                #5e6b91 5%,   
+                #28334a 95%
+                );
+
+                box-shadow: 0 0 10px 0 #aca6cf inset;
+            }
+            
+            p {
+                color: white;
+                padding: 2%;
+                font-weight: bolder;
+                font-size: 12px;
+            }
+
+            h1 {
+                color: white;
+                font-size: 42px;
+            }
+
+            @media(max-width: 680px) {
+
+                 .circle1 {
+                    height: 20%;
+                    width: 10%;
+                 }
+
+                p {
+                    font-size: 8px;
+                }
+
+                .bar1, .bar2, .bar3 {
+                    height: 15%;
+                }
+            }
+
+
+    </style>
+</head>
+<body class="flex">
+    <div class="main">
+        <h1>Responsive Checkout Progress Bar</h1>
+         <div class="section flex" style="justify-content: left;">
+            <div class="bar1 green flex">
+                <p class="green2">
+                    Login
+                </p>
+            </div>
+            <div class="circle1 green2 flex">
+                <p>1</p>
+               </div>
+               <div class="bar2 green flex">
+                <p class="green2">Shipping & Billing</p>
+               </div>
+               <div class="circle1 flex green2">
+                   <p>2</p>
+                </div>
+                <div class="bar2 blue flex">
+                    <p class="blue2">Shipping Options</p>
+                   </div>
+                <div class="circle1 flex blue2">
+                       <p>3</p>
+                </div>
+                <div class="bar2 grey flex">
+                    <p class="grey2">Review & Payment</p>
+                </div>
+                <div class="circle1 flex grey2">
+                       <p>4</p>
+                </div>
+                <div class="bar2 grey flex">
+                    <p class="grey2">Complete</p>
+                </div>
+                <div class="circle1 flex grey2">
+                       <p>5</p>
+                </div>
+                 <div class="bar3 grey">
+
+                 </div>
+         </div>
+    </div>
+</body>
+</html>
